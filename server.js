@@ -93,7 +93,7 @@ io.on('connect', socket => {
         roomBoard[socketroom[socket.id]] = url;
     })
 
-    socket.on("editor", function (editObj) {
+    socket.on('editor', function (editObj) {
         socket.broadcast.emit("code", editObj);
     })
 

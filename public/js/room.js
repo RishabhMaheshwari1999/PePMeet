@@ -185,7 +185,7 @@ let codeedit = document.getElementById("code");
 
 
 socket.on("code", function (editObj) {
-    setTimeout(chageeditor, 1000, editObj)
+    setTimeout(chageeditor, 10, editObj)
 })
 function chageeditor(editObj) {
     let formremove = document.querySelector(".set");
@@ -239,7 +239,7 @@ function chageeditor(editObj) {
 
     })
     socket.on("code", function (editObj) {
-        setTimeout(chageeditor, 1000, editObj)
+        setTimeout(chageeditor, 10, editObj)
     })
 
     ///
